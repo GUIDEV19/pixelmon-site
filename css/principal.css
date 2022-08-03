@@ -51,3 +51,106 @@
 .ranking {
     color: red;
 }
+
+#cartoesRankingCaixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerCartaoRank {
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 280px;
+    height: 350px;
+    background: url("../imagens/rankBackground.jpg");
+}
+
+.topo {
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.azul {
+    background-color: #016aae;
+}
+
+.amarelo {
+    background-color: #d1d108;
+}
+
+.roxo {
+    background-color: #962cff;
+}
+
+.topo img {
+    width: 40px;
+    margin-right: 2px;
+}
+
+.topo span {
+    margin-left: 4px;
+    font-size: 1.35em;    
+    font-family: FiraSansSemiBold;
+}
+
+.listaPlayers {
+    position: relative;
+    padding: 10px;
+}
+
+.listaPlayers ul {
+    list-style: none;
+    text-align: center;
+}
+
+.listaPlayers ul li {
+    font-family: FiraSansSemiBold;
+    font-size: 1.3em;
+    line-height: 30px;
+    background-color: rgba(211, 211, 211, 0.24);
+    border-radius: 5px;
+    margin: 5px 0px;
+    transition: 0.3s all;
+
+}
+
+.listaPlayers ul li:hover {
+    cursor: default;
+    background-color: rgba(211, 211, 211, 0.63);
+    transition: 0.3s all;
+}
+
+.listaPlayers ul li.primeiro {
+    color: gold;
+}
+
+.listaPlayers ul li.primeiro:hover {
+    color: white;
+    background-color: gold;
+}
+
+.segundo {
+    color: rgb(207, 207, 207);
+}
+
+.listaPlayers ul li.segundo:hover {
+    color: white;
+    background-color: rgb(207, 207, 207);
+}
+
+.terceiro {
+    color: rgba(255, 152, 56, 0.938);
+}
+
+.listaPlayers ul li.terceiro:hover {
+    color: white;
+    background-color: rgba(255, 152, 56, 0.938);
+}
