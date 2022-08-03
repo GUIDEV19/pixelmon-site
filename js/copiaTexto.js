@@ -1,11 +1,8 @@
-let copiarText =  document.querySelector('#ipServer')
 let trocaText = document.querySelector('#trocaText')
 let containerDireito = document.querySelector('#containerDireito')
 
 containerDireito.addEventListener('click', function(){
-    navigator.clipboard.writeText(copiarText.textContent)
-    console.log(copiarText.textContent) 
-    trocaText.style.transition = '1.0s all'
+    navigator.clipboard.writeText('127.0.0.1')
     trocaText.innerHTML = 'Ip copiado com sucesso!'
     
 });
