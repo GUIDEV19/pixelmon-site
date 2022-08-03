@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#menuNavegacao {
+    margin-top: 55px;
+    width: 100%;
+    min-width: 720px;
+    max-width: 2000px;
+    height: 45px;
+    background-color: #016aae;
+    align-items: center;
+
+}
+
+#menuNavegacao ul {
+    list-style: none;
+    font-family: RobotoMedium;
+    background-color: #016aae;
+    float: right;
+
+}
+
+#menuNavegacao ul li {
+    float: right;
+    margin: 0px 10px;
+    font-size: 1.2em;
+    padding: 10px;
+
+}
+
+#menuNavegacao ul li:hover {
+    transition: 0.2s all;
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+}
+
+#menuNavegacao ul a {
+    transition: 0.3s all;
+}
+
+
+#menuNavegacao ul a:hover {
+    color: rgb(211, 211, 211);
+    transition: 0.3s all;
+
+}
+
+.inicio {
+    background: url("../imagens/home.png") no-repeat left center;
+    background-size: 27px;
+    text-indent: 22px;
+}
+
+.quemSomos {
+    background: url("../imagens/quemSomos.png") no-repeat left center;
+    background-size: 27px;
+    text-indent: 22px;
+}
+
+.equipe {
+    background: url("../imagens/equipe.png") no-repeat left center;
+    background-size: 27px;
+    text-indent: 22px;
+}
+
+.loja {
+    background: url("../imagens/carrinho.png") no-repeat left center;
+    background-size: 27px;
+    text-indent: 22px;
+}
+
+#menuNavegacao span {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.4em;
+    font-family: FiraSansSemiBold;
+}
+
+
+

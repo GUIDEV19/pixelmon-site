@@ -1,0 +1,147 @@
+/* ---------------- FONTES ------------------- */
+@font-face {
+    font-family: FiraSansRegular;
+    src: url("../fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: FiraSansSemiBold;
+    src: url("../fonts/FiraSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Minecrafter;
+    src: url("../fonts/Minecrafter.Reg.ttf");
+}
+
+/* -------------------------------------------- */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 720px;
+    font-family: FiraSansRegular;
+    background: url("../imagens/fundo-topo2.png") no-repeat top center;
+}
+
+a, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#containerCabecalho {
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 45px;
+    min-width: 720px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.botaoCabecalho {
+    padding-left: 40px;
+    display: flex;
+    background-color: rgba(48, 48, 48, 0.795);
+    padding: 20px;
+    width: 300px;
+    height: 80px;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.botaoCabecalho img{
+    width: 80px;
+    margin-right: 8px;
+}
+
+.botaoCabecalho img.direita{
+    width: 350px;
+}
+
+.botaoCabecalho span.titulo{
+    font-family: FiraSansSemiBold;
+    font-size: 2.3em;
+    color: #2980c7;
+}
+
+span {
+    color: white;
+}
+
+.descricaoDiscord {
+    font-size: 1.2em;
+    font-family: FiraSansRegular;
+}
+
+.logoXYZ {
+    width: 380px;
+    height: 300px;
+    
+    align-items: center;
+}
+
+.logoXYZ img{
+    width: 380px;
+    padding: 10px;
+    transition: 0.3s all;
+}
+
+.logoXYZ img:hover{
+    padding-top: 15px;
+    transition: 0.3s all;
+}
+
+.containerClicavelLadoEsquerdo {
+    margin-right: 70px;
+    border-radius: 15px;
+    transition: 0.3s all;
+}
+
+.containerClicavelLadoEsquerdo:hover {
+    background-color: rgba(48, 48, 48, 0.808);
+    transition: 0.3s all;
+}
+
+.containerClicavelLadoDireito {
+    margin-left: 80px;
+    transition: 0.3s all;
+    border-radius: 15px;
+}
+
+.containerClicavelLadoDireito:hover {
+    background-color: rgba(48, 48, 48, 0.808);
+    transition: 0.3s all;
+}   
+
+button {
+    background-color: #2980c700;
+}
+
+
+
+
+
+
+
