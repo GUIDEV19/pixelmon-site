@@ -78,6 +78,7 @@ a, a:visited, a:active {
 
 .botaoCabecalho img.direita{
     width: 350px;
+    padding-right: 10px;
 }
 
 .botaoCabecalho span.titulo{
@@ -128,6 +129,7 @@ span {
     margin-left: 80px;
     transition: 0.3s all;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .containerClicavelLadoDireito:hover {
@@ -137,6 +139,10 @@ span {
 
 button {
     background-color: #2980c700;
+}
+
+#ipServer {
+    display: none;
 }
 
 
