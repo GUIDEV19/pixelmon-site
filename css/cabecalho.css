@@ -35,8 +35,13 @@
 
 body {
     min-width: 720px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
     font-family: FiraSansRegular;
     background: url("../imagens/fundo-topo2.png") no-repeat top center;
+    border-radius: 10px;
+
 }
 
 a, a:visited, a:active {
@@ -140,6 +145,8 @@ span {
 button {
     background-color: #2980c700;
 }
+
+
 
 
 

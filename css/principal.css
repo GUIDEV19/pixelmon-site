@@ -17,6 +17,7 @@
 .tituloPrincipal {
     text-align: center;
     font-size: 3em;
+    line-height: 120px;
     font-family: Minecrafter;
     margin-bottom: 15px;
     color: #ffffff;
@@ -37,6 +38,7 @@
     background-size: cover;
     border-radius: 15px;
     padding: 60px;
+    height: 120px;
     margin-bottom: 20px;
 }
 
@@ -45,6 +47,7 @@
     background-size: cover;
     border-radius: 15px;
     padding: 60px;
+    height: 120px;
     margin-bottom: 20px;
 }
 

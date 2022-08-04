@@ -8,33 +8,41 @@
     margin-top: 55px;
     width: 100%;
     min-width: 720px;
-    max-width: 2000px;
+    border-radius: 0px 0px 10px 10px;    
     height: 45px;
     background-color: #016aae;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 
 }
 
 #menuNavegacao ul {
     list-style: none;
     font-family: RobotoMedium;
+    border-radius: 10px 10px 10px 10px;    
     background-color: #016aae;
+    display: flex;
     float: right;
+}
+
+#menuNavegacao ul a li {
+    border-radius: 10px 10px 10px 10px;    
+    margin: 0px 10px;
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+#menuNavegacao ul li:hover {
+    transition: 0.1s all;
+    background-color: #035388;
+    border-bottom: 2px solid yellow;
 
 }
 
 #menuNavegacao ul li {
-    float: right;
-    margin: 0px 10px;
-    font-size: 1.2em;
-    padding: 10px;
-
-}
-
-#menuNavegacao ul li:hover {
     transition: 0.2s all;
-    border-bottom: 2px solid rgb(0, 0, 0);
-
 }
 
 #menuNavegacao ul a {
@@ -42,11 +50,6 @@
 }
 
 
-#menuNavegacao ul a:hover {
-    color: rgb(211, 211, 211);
-    transition: 0.3s all;
-
-}
 
 .inicio {
     background: url("../imagens/home.png") no-repeat left center;
@@ -74,10 +77,17 @@
 
 #menuNavegacao span {
     display: inline-block;
-    padding-top: 10px;
     padding-left: 10px;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-family: FiraSansSemiBold;
+    transition: 0.3s all;
+
+}
+
+#menuNavegacao span:hover {
+    cursor: default;
+    color: yellow;
+    transition: 0.3s all;
 }
 
 
