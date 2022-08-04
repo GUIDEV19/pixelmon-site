@@ -29,7 +29,7 @@
 }
 
 .conteudo {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 #containerBemVindo {
@@ -153,4 +153,57 @@
 .listaPlayers ul li.terceiro:hover {
     color: white;
     background-color: rgba(255, 152, 56, 0.938);
+}
+
+
+
+
+
+
+
+
+
+
+.posicao1 {
+    background: url("../imagens/1.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao2 {
+    background: url("../imagens/2.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao3 {
+    background: url("../imagens/3.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao4 {
+    background: url("../imagens/4.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao5 {
+    background: url("../imagens/5.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao6 {
+    background: url("../imagens/6.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao7 {
+    background: url("../imagens/7.png") no-repeat left center;
+    background-size: contain;
+}
+.posicao8 {
+    background: url("../imagens/8.png") no-repeat left center;
+    background-size: contain;
+}
+
+.negrito {
+    font-weight: bold;
+    color: black;
+}
+
+.obrigado {
+    font-size: 1.2em;
+    color: #016aae;
+    font-weight: bold;
 }
