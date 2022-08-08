@@ -7,9 +7,11 @@
 #menuNavegacao {
     margin-top: 55px;
     width: 100%;
-    min-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 870px;
     border-radius: 0px 0px 10px 10px;    
-    height: 45px;
+    height: 40px;
     background-color: #016aae;
     align-items: center;
     display: flex;
@@ -35,14 +37,14 @@
 }
 
 #menuNavegacao ul li:hover {
-    transition: 0.1s all;
+    transition: 0.3s all;
     background-color: #035388;
-    border-bottom: 2px solid yellow;
-
+    border-bottom: 1px solid rgb(80, 199, 90);
 }
 
 #menuNavegacao ul li {
-    transition: 0.2s all;
+    transition: 0.4s all;
+    border: 1px solid #016aae;
 }
 
 #menuNavegacao ul a {
@@ -72,6 +74,12 @@
 .loja {
     background: url("../imagens/carrinho.png") no-repeat left center;
     background-size: 27px;
+    text-indent: 22px;
+}
+
+.regras {
+    background: url("../imagens/regrasIcon.png") no-repeat left center;
+    background-size: 32px;
     text-indent: 22px;
 }
 

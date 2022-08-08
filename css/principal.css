@@ -5,8 +5,8 @@
 }
 
 #principal {
-    width: 70%;
-    min-width: 720px;
+    width: 80%;
+    min-width: 870px;
     max-width: 1200px;
     border-radius: 10px;
     padding: 15px;
@@ -156,6 +156,41 @@
 .listaPlayers ul li.terceiro:hover {
     color: white;
     background-color: rgba(255, 152, 56, 0.938);
+}
+
+.divisoria {
+    background-color: rgba(167, 167, 167, 0.199);
+    margin-top: -40px;
+    margin-bottom: 40px;
+    padding: 1px;
+}
+
+#containerRegras {
+    background: url("../imagens/regras.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 60px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+#containerRegras .tituloPrincipal {
+    color: #3952e2;
+    margin-bottom: 15px;
+}
+
+#containerBookRegras {
+    margin: 0 auto;
+    background: url("../imagens/book.png") no-repeat center center;
+    background-size: contain    ;
+    height: 450px;
+    width: 80%;
+    border: 1px solid red;
+}
+
+.escrituraRegras p {
+    width: 700px;
+    margin: 0 auto;
 }
 
 

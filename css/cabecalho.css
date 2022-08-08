@@ -35,7 +35,7 @@
 
 body {
     min-width: 720px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     justify-content: center;
     font-family: FiraSansRegular;
@@ -144,6 +144,14 @@ span {
 
 button {
     background-color: #2980c700;
+}
+
+span#trocaText {
+    transition: 0.3s all;
+}
+
+.descricaoLogo {
+    width: 180px;
 }
 
 
