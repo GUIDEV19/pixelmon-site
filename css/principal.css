@@ -24,10 +24,7 @@
     
 }
 
-.textoPrincipal {
-    font-size: 1.2em;
-    text-align: center;
-}
+
 
 .conteudo {
     margin-bottom: 80px;
@@ -102,6 +99,7 @@
     margin-left: 4px;
     font-size: 1.35em;    
     font-family: FiraSansSemiBold;
+    color: white;
 }
 
 .listaPlayers {
@@ -193,6 +191,23 @@
     margin: 0 auto;
 }
 
+.containerPremios {
+    margin-top: 80px;
+}
+
+#containerPremios {
+    background: url("../imagens/premios.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 60px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+#containerPremios .corTituloPrincipal {
+    color: yellow;
+}
+
 
 
 
@@ -235,10 +250,7 @@
     background-size: contain;
 }
 
-.negrito {
-    font-weight: bold;
-    color: black;
-}
+
 
 .obrigado {
     font-size: 1.2em;

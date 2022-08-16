@@ -1,1 +1,48 @@
-.tituloseca
+.negrito {
+    font-weight: bold;
+}
+
+.textoPrincipal {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#principal .conteudo .textoPrincipal {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.secaoRegra {
+    background-color: rgb(81, 127, 255);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s all;
+}
+
+.secaoRegra:hover {
+    background-color: rgb(45, 100, 253);
+    transition: 0.3s all;
+}
+
+.silenciamentos {
+    background-color: rgb(206, 219, 255);
+    width: 720px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.tituloContainerRegra {
+    width: 720px;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    background: rgb(223, 223, 223);
+    border-radius: 10px;
+    
+}
+
+.tituloContainerRegra > p.textoPrincipal {
+    font-family: RobotoRegular;
+    color: rgb(0, 0, 0);
+}

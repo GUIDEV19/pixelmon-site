@@ -6,7 +6,7 @@
 
 #menuNavegacao {
     margin-top: 55px;
-    width: 100%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     min-width: 870px;
@@ -34,6 +34,11 @@
     margin: 0px 10px;
     font-size: 1.2em;
     padding: 15px;
+}
+
+#menuNavegacao ul li.ativo {
+    background-color: #035388;
+    border-bottom: 2px solid rgb(80, 199, 90);
 }
 
 #menuNavegacao ul li:hover {
@@ -89,6 +94,7 @@
     font-size: 1.6em;
     font-family: FiraSansSemiBold;
     transition: 0.3s all;
+    color: white;
 
 }
 
