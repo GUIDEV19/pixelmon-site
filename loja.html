@@ -97,9 +97,10 @@
                     <div class="ladoEsquerdo">
                         <h1>Descrição</h1>
                         <div class="content">
-                            <h2>VIP 60 DIAS</h2>
+                            <h2 id="produtoSelecionado">VIP 60 DIAS</h2>
                             <hr>
-                            <p class="descricaoProduto">Comprando o VIP de 60 dias<br> você garante 2 meses de muitos benefícios!<br>Usufrua de todas as vantagens VIP e ajude o servidor à continuar gratuito e com constantes atualizações.</p>
+                            <p id="descricaoProduto">Comprando o VIP de 60 dias<br> você garante 2 meses de muitos benefícios!<br>Usufrua de todas as vantagens VIP e ajude o servidor a continuar gratuito e com constantes atualizações.</p>
+                            <h2 id="valor">R$60,00</h2>
                             <input type="button" value="Comprar" id="botaoComprar">
                         </div>
                     </div>
@@ -107,22 +108,22 @@
                     <div class="ladoDireito">
 
                         <div class="fileiraProdutos">
-                            <div class="produto">
+                            <div class="produto vip30dias" id="vip30dias">
                                 <h2>VIP 30 Dias</h2>
                                 <img src="imagens/vip1.png" alt="" class="imgProduto">
                             </div>
-                            <div class="produto">
+                            <div class="produto" id="vip60dias">
                                 <h2>VIP 60 Dias</h2>
                                 <img src="imagens/vip2.png" alt="" class="imgProduto">
                             </div>
-                            <div class="produto">
+                            <div class="produto" id="vip90dias">
                                 <h2>VIP 90 Dias</h2>
                                 <img src="imagens/vip3.png" alt="" class="imgProduto">
                             </div>
                         </div>
 
                         <div class="fileiraProdutos">
-                            <div class="produto">
+                            <div class="produto vip30dias" id="vip60dias">
                                 <h2>VIP 30 Dias</h2>
                                 <img src="imagens/vip1.png" alt="" class="imgProduto">
                             </div>
@@ -170,6 +171,7 @@
     </footer>
 
     <script src="./js/copiaTexto.js"></script>
+    <script src="./js/selecionarProduto.js"></script>
 
 
 

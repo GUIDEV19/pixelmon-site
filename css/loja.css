@@ -31,6 +31,7 @@
     text-align: center;
     border-radius: 10px 0px 0px 10px;
     padding: 20px;
+    box-shadow: rgb(0 0 0 / 42%) 1px 4px 16px 4px
 }
 
 .ladoEsquerdo h1 {
@@ -47,9 +48,21 @@
     
 }
 
-.ladoEsquerdo .descricaoProduto {
+.ladoEsquerdo h2#valor {
+    background-color: rgb(48, 255, 48);
+    width: 30%;
+    line-height: 40px;
+    border-radius: 20px;
+    font-family: FiraSansSemiBold;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.ladoEsquerdo #descricaoProduto {
     margin-top: 15px;
     color: white;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 .content {
@@ -60,11 +73,12 @@
     padding: 20px;
     width: 300px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 20px;
     color: white;
     background-color: rgb(62, 125, 206);
     transition: 0.3s all;
+    
 }
 
 #botaoComprar:hover {
@@ -72,6 +86,11 @@
     color: black;
     transition: 0.3s all;
     cursor: pointer;
+}
+
+#botaoComprar:before {
+    background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+    padding-left:30px;
 }
 
 .ladoDireito {
@@ -83,6 +102,7 @@
     border-radius: 0px 10px 10px 0px;
     padding: 10px;
     justify-content: center;
+    box-shadow: 4px 4px 20px 0px rgb(0 0 0 / 30%)
 }
 
 .fileiraProdutos {
