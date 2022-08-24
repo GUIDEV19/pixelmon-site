@@ -49,7 +49,7 @@
 }
 
 .ladoEsquerdo h2#valor {
-    background-color: rgb(48, 255, 48);
+    background-color: #2ECC71;
     width: 30%;
     line-height: 40px;
     border-radius: 20px;
@@ -94,7 +94,8 @@
 }
 
 .ladoDireito {
-    background-color: rgb(231, 230, 230);
+    /*background-color: rgb(231, 230, 230);*/
+    background: url("../imagens/backgroundClouds.png");
     width: 60%;
     height: 600px;
     align-items: center;
@@ -103,6 +104,10 @@
     padding: 10px;
     justify-content: center;
     box-shadow: 4px 4px 20px 0px rgb(0 0 0 / 30%)
+}
+
+.produtos {
+    margin-top: 30px;
 }
 
 .fileiraProdutos {
@@ -116,7 +121,7 @@
 .produto {
     width: 160px;
     height: 160px;
-    background-color: rgb(121, 168, 255);
+    background-color: rgb(82, 143, 255);
     border-radius: 15px;
     padding: 5px;
     margin: 0px 10px 0px 10px;
@@ -127,7 +132,7 @@
 .produto:hover {
     cursor: pointer;
     background-color: rgb(55, 125, 255);
-    transition: 0.3s all;
+    transition: 0.2s all;
 
 }
 
@@ -142,6 +147,63 @@
 
 .produto .imgProduto {
     width: 140px;
+}
+
+
+
+
+
+
+
+.button {
+    margin-top: 10px;
+    position: relative;
+    width: 300px;
+    height: 65px;
+    font-size: 20px;
+    background-color: rgb(62, 125, 206);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: width .4s,
+    border-radius .5s,
+    all 0.3s;
+}
+.button:hover {
+
+    background-color: rgb(255, 255, 255);
+        color: black;
+        transition: 0.3s all;
+        cursor: pointer;
+}
+
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    transition: opacity .25s;
+}
+
+.icon {
+    opacity: 0;
+    
+}
+
+.button:focus{
+    width: 65px;
+    background-color: #2ECC71;
+    border-radius: 100%;
+}
+
+.button:focus .textoComprar {
+    opacity: 0;
+}
+
+.button:focus .icon {
+    opacity: 1;
+    transition-delay: .5s;
 }
 
 
