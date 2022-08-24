@@ -1,12 +1,24 @@
 const express = require('express')
+const cors = require('cors')
 const bodyParser = require('body-parser')
 const mercadopago = require('mercadopago')
 
+
 const app = express()
+
+const port = 3000
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Acess-Control-Allow-Methods", "GET, PUT, POST, DELETE")
+    app.use(cors())
+    next()
+})
+
 
 app.use(bodyParser.json())
 
-const port = 3000
+
 
 mercadopago.configure({
 	access_token: "TEST-7001311731677237-082321-0f27bff2dba64b5b3b3e69043e3c96ce-241447996",
@@ -44,13 +56,17 @@ let preference = {
 
 
 app.get('/', (req, res) =>{
-    //page inicia da api
+    //page inicial da api
     res.status(200).send({mensagem: 'boas-vindas à API'})
     
 });
 
 
-app.get('/teste', (req, res) =>{
+app.get('/teste/:id', (req, res) =>{
+
+    const {id} = req.params
+    /* Para fazer um teste no navegar do metodo digite http://localhost:3000/teste/id_que_quer_enviar */
+    console.log("Teste de requisação web, seu id é ", id)
     //teste dp metodo get
     return res.json({
         status: "Get está funcionando"
@@ -87,7 +103,7 @@ app.delete('/teste', (req, res) => {
 })
    
 
-app.listen(port, () => console.log('servidor rodando na porta ' + port))
+app.listen(port, () => console.log(`Servidor está iniciado http://localhost/${port}`))
 
 module.exports = app
 
