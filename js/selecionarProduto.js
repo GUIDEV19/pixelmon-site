@@ -20,6 +20,7 @@ vipx30dias.addEventListener('click', function(){
     textoProdutoSelecionado.innerHTML = 'VIP 30 DIAS'
     vipx30dias.style.backgroundColor = 'lightblue'
     vipx30dias.style.border = '3px solid yellow'
+    
 
     descricaoProduto.textContent = 'Comprando o VIP de 30 dias você garante 1 mês de muitos benefícios! Usufrua de todas as vantagens VIP e ajude o servidor a continuar gratuito e com constantes atualizações.'
 
