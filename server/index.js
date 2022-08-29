@@ -3,7 +3,6 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const mercadopago = require('mercadopago')
 
-
 const app = express()
 
 const port = 3000
@@ -11,43 +10,47 @@ const port = 3000
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*")
     res.header("Acess-Control-Allow-Methods", "GET, PUT, POST, DELETE")
+    
     app.use(cors())
     next()
 })
 
-
 app.use(bodyParser.json())
-
-
 
 mercadopago.configure({
 	access_token: "TEST-7001311731677237-082321-0f27bff2dba64b5b3b3e69043e3c96ce-241447996",
 });
 
+var vip = 'VIPX60'
+
+
+if(vip == 'VIPX30'){
+    var title = 'VIPX 30 Dias';
+    var valor = 20
+}else if(vip == 'VIPX60'){
+    var title = 'VIPX 60 Dias';
+    var valor = 38
+}
+
+
 let preference = {
         items: [
         {
-            title: 'VIP 30 Dias',
-            unit_price: 30,
+            title: title,
+            unit_price: valor,
             quantity: 1,
         },
-        {
-            title: 'VIP 60 Dias',
-            unit_price: 60,
-            quantity: 1,
-        },
-        {
-            title: 'VIP 90 Dias',
-            unit_price: 90,
-            quantity: 1,
-        }
-        ]
-    };
+    ]
+};
+
+
+
     
     mercadopago.preferences.create(preference)
     .then(function(response){
     // Este valor substituirá a string "<%= global.id %>" no seu HTML
         global.id = response.body.id;
+        console.log(global.id)
     }).catch(function(error){
         console.log(error);
     });
