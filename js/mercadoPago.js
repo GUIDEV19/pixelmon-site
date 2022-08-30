@@ -13,7 +13,7 @@ const mp = new MercadoPago('TEST-175c9ea0-6a24-43f5-b35a-4d9a5c1f7180', {
 
 mp.checkout({
     preference: {
-        id: '241447996-92921969-e506-4a28-8e80-052f0b7b7b70'
+        id: '241447996-8d3a23bf-01ab-45e0-8492-8d691af13ea3'
     },
     render: {
         container: '.button',
