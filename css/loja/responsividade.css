@@ -1,0 +1,19 @@
+@media screen and (max-width:1050px){
+    .produto .imgProduto {
+        width: 100px;
+    }
+
+    .produto h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .produto .imgProduto {
+        width: 95px;
+    }
+
+    .produto h2 {
+        font-size: 16px;
+    }
+}
