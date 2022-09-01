@@ -1,5 +1,5 @@
 #containerLoja {
-    background: url("../imagens/lojaBackground.jpg") no-repeat center center;
+    background: url("../../imagens/lojaBackground.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 15px;
     padding: 60px;
@@ -16,17 +16,23 @@
     background-color: rgb(248, 248, 248);
 }
 
+#conteudo {
+    margin: 0 auto;
+}
+
 #displayContainerLoja {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 .ladoEsquerdo {
-    background: url("../imagens/ladoesquerdobrackground.jpg") no-repeat center center;
-    width: 50%;
-    height: 580px;
+    background: url("../../imagens/ladoesquerdobrackground.jpg") no-repeat center center;
+    width: 55%;
+    height: 780px;
     align-items: center;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
@@ -46,7 +52,6 @@
     background-color: yellow;
     padding: 5px;
     border-radius: 10px;
-    
 }
 
 .ladoEsquerdo h2#valor {
@@ -72,14 +77,73 @@
 .beneficio {
     color: black;
     width: 100%;
-    padding: 2px;
+    cursor: default;
+    transition: 0.3s all;
+    font-size: 100%;
     align-items: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.beneficio:hover {
+    cursor: default;
+    background-color: rgb(113, 164, 199);
+    transition: 0.3s all;
+}
+
+.beneficioMensal {
+    color: black;
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+    height: 14%;
+    font-size: 0.888em;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 2px;
+    cursor: default;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.beneficioMensal:hover {
+    cursor: default;
+    background-color: rgb(113, 164, 199);
+    transition: 0.3s all;
+}
+
+.caixasMensal {
+    display: flex;
+    justify-content: center;
+    transition: 0.3s all;
+    position: relative;
+    min-width: 480px;
+    
+}
+
+.coluna {
+    margin: 0px 4px 0px 4px;
 }
 
 .containerBeneficios {
     padding: 4px;
     width: 30%;
     margin: 0px 5px;
+    transition: 0.3s all;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 4px 4px 20px 0px rgb(0 0 0 / 30%);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.containerBeneficiosMensal {
+    padding: 4px;
+    width: 100%;
+    height: 160px;
+    transition: 0.3s all;
+    margin: -8px auto 10px auto;
     align-items: center;
     justify-content: center;
 
@@ -91,11 +155,14 @@
 .displayFlexBeneficios {
     display: flex;
     justify-content: center;
+    transition: 0.3s all;
     margin-bottom: 20px;
 }
 
 .content {
-    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #botaoComprar {
@@ -124,9 +191,9 @@
 
 .ladoDireito {
     /*background-color: rgb(231, 230, 230);*/
-    background: url("../imagens/backgroundClouds.png");
-    width: 50%;
-    height: 600px;
+    background: rgb(169, 206, 255) url("../../imagens/backgroundClouds.png") no-repeat center center;
+    width: 45%;
+    height: 800px;
     align-items: center;
     text-align: center;
     border-radius: 0px 10px 10px 0px;
@@ -136,7 +203,7 @@
 }
 
 .produtos {
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .fileiraProdutos {
@@ -148,8 +215,8 @@
 }
 
 .produto {
-    width: 170px;
-    height: 160px;
+    width: 140px;
+    height: 130px;
     background-color: rgb(82, 143, 255);
     border-radius: 15px;
     padding: 5px;
@@ -172,6 +239,7 @@
     border-radius: 10px;
     margin-bottom: 5px;
     padding: 3px;
+    font-size: 18px;
 }
 
 .marromVip {
@@ -191,7 +259,7 @@
 
 
 .produto .imgProduto {
-    width: 140px;
+    width: 110px;
 }
 
 

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/principal.css">
     <link rel="stylesheet" href="./css/rodape.css">
     <link rel="stylesheet" href="./css/regras.css">
-    <link rel="stylesheet" href="./css/loja.css">
+    <link rel="stylesheet" href="./css/loja/loja.css">
+    <link rel="stylesheet" href="./css/loja/responsividade.css">
     <link rel="shortcut icon" href="./imagens/logoXYZrecortado.png" type="image/x-icon">
     <title>Pixelmon XYZ - Loja</title>
 </head>
@@ -85,7 +86,7 @@
 
     <div id="principalLoja">
 
-        <div class="conteudo">
+        <div id="conteudo">
 
             <div class="containerEscrito">
 
@@ -103,30 +104,53 @@
 
                             <div class="displayFlexBeneficios">
                                 <div class="containerBeneficios">
-                                    <p class="beneficio negrito">Diário</p>
+                                    <p class=" negrito">Diário</p>
                                     <p class="beneficio b1">♣ 30 Pokebolas</p>
                                     <p class="beneficio b2">♣ 10 Great's</p>
                                     <p class="beneficio b3">♣ 8 Ultra</p>
                                     <p class="beneficio b4">♣ 8 Rare Candy</p>
+                                    <p class="beneficio b5"></p>
+                                    <p class="beneficio b6"></p>
                                 </div>
                                 <div class="containerBeneficios">
-                                    <p class="beneficio negrito">Semanal</p>
-                                    <p class="beneficio b5">♣ 30 Pokebolas</p>
-                                    <p class="beneficio b6">♣ 20 Great's</p>
-                                    <p class="beneficio b7">♣ 15 Ultras</p>
-                                    <p class="beneficio b8">♣ 16 Rare Candy</p>
-                                    <p class="beneficio b9">♣ 15 Dusk Ball</p>
+                                    <p class=" negrito">Semanal</p>
+                                    <p class="beneficio b7">♣ 30 Pokebolas</p>
+                                    <p class="beneficio b8">♣ 20 Great's</p>
+                                    <p class="beneficio b9">♣ 15 Ultras</p>
+                                    <p class="beneficio b10">♣ 16 Rare Candy</p>
+                                    <p class="beneficio b11">♣ 15 Dusk Ball</p>
+                                    <p class="beneficio b12"></p>
+                                    <p class="beneficio b13"></p>
                                 </div>
-                                <div class="containerBeneficios">
-                                    <p class="beneficio negrito">Mensal</p>
-                                    <p class="beneficio b10">♣ 10 Thuder stone</p>
-                                    <p class="beneficio b11">♣ 10 Water stone</p>
-                                    <p class="beneficio b12">♣ 10 Fire</p>
-                                    <p class="beneficio b13">♣ 16 Diamantes</p>
-                                    <p class="beneficio b14">♣ 1 Bloco de diamante</p>
-                                    <p class="beneficio b15">♣ 1 Master ball</p>
-                                    <p class="beneficio b16">♣ Armadura de dusk</p>
-                                </div>
+                            </div>
+                            <div class="containerBeneficiosMensal">
+                                    <p class="negrito">Mensal</p>
+                                    <div class="caixasMensal">
+                                        <div class="coluna">
+                                            <p class="beneficioMensal b14">♣ 10 Thuder stone  </p>
+                                            <p class="beneficioMensal b15">♣ 10 Water stone  </p>
+                                            <p class="beneficioMensal b16">♣ 10 Fire  </p>
+                                            <p class="beneficioMensal b17">♣ 16 Diamantes  </p>
+                                            <p class="beneficioMensal b18">♣ 1 Bloco de diamante  </p>
+
+                                        </div>
+                                        <div class="coluna">
+                                            <p class="beneficioMensal b19">♣ 1 Master Ball  </p>
+                                            <p class="beneficioMensal b20">♣ Armadura de dusk  </p>
+                                            <p class="beneficioMensal b21"></p>
+                                            <p class="beneficioMensal b22"></p>
+                                            <p class="beneficioMensal b23"></p>
+
+                                        </div>
+                                        <div class="coluna">
+                                            <p class="beneficioMensal b24">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+                                            <p class="beneficioMensal b25">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+                                            <p class="beneficioMensal b26">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+                                            <p class="beneficioMensal b27">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+                                            <p class="beneficioMensal b28">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+
+                                        </div>
+                                    </div>
                             </div>
 
                             <h2 id="valor">R$60,00</h2>
@@ -222,7 +246,21 @@
     <script src="./js/copiaTexto.js"></script>
     <script src="./js/selecionarProduto.js"></script>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <script src="./js/mercadoPago.js"></script>
+    <script>
+        const mp = new MercadoPago('TEST-175c9ea0-6a24-43f5-b35a-4d9a5c1f7180', {
+          locale: 'pt-BR'
+        });
+      
+        mp.checkout({
+          preference: {
+            id: '241447996-8d3a23bf-01ab-45e0-8492-8d691af13ea3'
+          },
+          render: {
+            container: '.button',
+            label: 'Comprar',
+          }
+        });
+      </script>
 </body>
 </html>
 
