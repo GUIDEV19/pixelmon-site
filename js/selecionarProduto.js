@@ -1,3 +1,5 @@
+
+
 let vipx30dias = document.getElementById('vipx30dias')
 let vipx60dias = document.getElementById('vipx60dias')
 let vipx90dias = document.getElementById('vipx90dias')
@@ -14,6 +16,8 @@ let valor = document.getElementById('valor')
 let descricaoProduto = document.getElementById('descricaoProduto')
 
 let textoProdutoSelecionado = document.getElementById('produtoSelecionado')
+
+
 
 vipx30dias.addEventListener('click', function(){
     //Mudar texto, valor e produto selecionado

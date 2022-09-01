@@ -10,7 +10,6 @@ const port = 3000
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*")
     res.header("Acess-Control-Allow-Methods", "GET, PUT, POST, DELETE")
-    
     app.use(cors())
     next()
 })
@@ -21,41 +20,6 @@ mercadopago.configure({
 	access_token: "TEST-7001311731677237-082321-0f27bff2dba64b5b3b3e69043e3c96ce-241447996",
 });
 
-var vip = 'VIPX60'
-
-
-if(vip == 'VIPX30'){
-    var title = 'VIPX 30 Dias';
-    var valor = 20
-}else if(vip == 'VIPX60'){
-    var title = 'VIPX 60 Dias';
-    var valor = 38
-}
-
-
-let preference = {
-        items: [
-        {
-            title: title,
-            unit_price: valor,
-            quantity: 1,
-        },
-    ]
-};
-
-
-
-    
-    mercadopago.preferences.create(preference)
-    .then(function(response){
-    // Este valor substituirá a string "<%= global.id %>" no seu HTML
-        global.id = response.body.id;
-        console.log(global.id)
-    }).catch(function(error){
-        console.log(error);
-    });
-
-
 
 
 app.get('/', (req, res) =>{
@@ -65,18 +29,82 @@ app.get('/', (req, res) =>{
 });
 
 
-app.get('/teste/:id', (req, res) =>{
+app.get('/geraChave/?', (req, res) => {
 
-    const {id} = req.params
-    /* Para fazer um teste no navegar do metodo digite http://localhost:3000/teste/id_que_quer_enviar */
-    console.log("Teste de requisação web, seu id é ", id)
-    //teste dp metodo get
-    return res.json({
-        status: "Get está funcionando"
-    })
+        var vipQueVeioDaREQ = req.query.vip
 
+
+        if(vipQueVeioDaREQ  == 'VIPX30'){
+            var title = 'VIP X 30 Dias';
+            var valor = 20
+        }
+        if(vipQueVeioDaREQ  == 'VIPX60'){
+            var title = 'VIP X 60 Dias';
+            var valor = 38
+        }
+        if(vipQueVeioDaREQ  == 'VIPX90'){
+            var title = 'VIP X 90 Dias';
+            var valor = 55
+        }
+        if(vipQueVeioDaREQ  == 'VIPY30'){
+            var title = 'VIP Y 30 Dias';
+            var valor = 30
+        }
+        if(vipQueVeioDaREQ  == 'VIPY60'){
+            var title = 'VIP Y 60 Dias';
+            var valor = 57
+        }
+        if(vipQueVeioDaREQ  == 'VIPY90'){
+            var title = 'VIP X 90 Dias';
+            var valor = 83
+        }
+        if(vipQueVeioDaREQ  == 'VIPZ30'){
+            var title = 'VIP Z 30 Dias';
+            var valor = 50
+        }
+        if(vipQueVeioDaREQ  == 'VIPZ60'){
+            var title = 'VIP Z 90 Dias';
+            var valor = 95
+        }
+        if(vipQueVeioDaREQ  == 'VIPZ90'){
+            var title = 'VIP Z 90 Dias';
+            var valor = 137
+        }
+       
+
+        let preference = {
+                items: [
+                {
+                    title: title,
+                    unit_price: valor,
+                    quantity: 1,
+                },
+            ]
+        };
+
+
+
+        
+        mercadopago.preferences.create(preference)
+        .then(function(response){
+        const {id} = response.body;
+
+            console.log(id)
+            return res.json({chave: `${id}`})
+
+        }).catch(function(error){
+
+            console.log(error);
+
+        });
+
+
+        
+        /* Para fazer um teste no navegar do metodo digite http://localhost:3000/teste/id_que_quer_enviar */
+        console.log("Teste de requisação web, seu id é ", vipQueVeioDaREQ)
+   
     
-});
+    });
 
 
 app.post('/teste', (req, res)=>{

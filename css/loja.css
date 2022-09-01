@@ -250,4 +250,9 @@
     transition-delay: .5s;
 }
 
-
+.invisivel{
+    display: none;
+    color: transparent;
+    font-size: 0;
+  
+}
