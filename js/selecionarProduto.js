@@ -41,6 +41,16 @@ let b24 = document.querySelector(".b24");
 let b25 = document.querySelector(".b25");
 let b26 = document.querySelector(".b26");
 
+let c1 = document.querySelector(".c1")
+let c2 = document.querySelector(".c2")
+let c3 = document.querySelector(".c3")
+let c4 = document.querySelector(".c4")
+let c5 = document.querySelector(".c5")
+let c6 = document.querySelector(".c6")
+let c7 = document.querySelector(".c7")
+let c8 = document.querySelector(".c8")
+let c9 = document.querySelector(".c9")
+
 let valor = document.getElementById('valor')
 let descricaoProduto = document.getElementById('descricaoProduto')
 
@@ -80,6 +90,22 @@ vipx30dias.addEventListener('click', function(){
     b19.innerHTML = "♣ 1 Master Ball"
     b20.innerHTML = "♣ Armadura de dusk"
     b21.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b22.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b23.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+
+    //comandos
+    c1.innerHTML = "♣ Sem Warp VIP"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 4 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
     descricaoProduto.textContent = 'Comprando o VIP de 30 dias você garante 1 mês de muitos benefícios! Usufrua de todas as vantagens VIP e ajude o servidor a continuar gratuito e com constantes atualizações.'
 
@@ -145,6 +171,23 @@ vipx60dias.addEventListener('click', function(){
     b19.innerHTML = "♣ 1 Master Ball"
     b20.innerHTML = "♣ Armadura de dusk"
     b21.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b22.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b23.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+
+    //comandos
+    c1.innerHTML = "♣ Sem Warp VIP"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 4 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    
 
     valor.innerHTML = 'R$38,00'
 
@@ -209,6 +252,22 @@ vipx90dias.addEventListener('click', function(){
     b19.innerHTML = "♣ 1 Master Ball"
     b20.innerHTML = "♣ Armadura de dusk"
     b21.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b22.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b23.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+
+    //comandos
+    c1.innerHTML = "♣ Sem Warp VIP"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 4 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
     valor.innerHTML = 'R$55,00'
 
@@ -272,8 +331,23 @@ vipy30dias.addEventListener('click', function(){
     b19.innerHTML = "♣ 5 Blocos de Diamante"
     b20.innerHTML = "♣ 3 Master ball"
     b21.innerHTML = "♣ Armadura Thunder"
-
+    b22.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b23.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     valor.innerHTML = 'R$30,00'
+
+    //comandos
+    c1.innerHTML = "♣ Sem Warp VIP"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 4 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
     //Tirar as formatações dos outros (tirar a borda e voltar a cor de fundo ao normal)
     vipx60dias.style.border = 'none'
@@ -333,6 +407,11 @@ vipy60dias.addEventListener('click', function(){
     b19.innerHTML = "♣ 5 Blocos de Diamante"
     b20.innerHTML = "♣ 3 Master ball"
     b21.innerHTML = "♣ Armadura Thunder"
+    b22.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b23.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
     valor.innerHTML = 'R$57,00'
 
