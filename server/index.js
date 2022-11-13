@@ -21,7 +21,6 @@ mercadopago.configure({
 });
 
 
-
 app.get('/', (req, res) =>{
     //page inicial da api
     res.status(200).send({mensagem: 'boas-vindas à API'})
@@ -36,43 +35,44 @@ app.get('/geraChave/?', (req, res) => {
 
         if(vipQueVeioDaREQ  == 'VIPX30'){
             var title = 'VIP X 30 Dias';
-            var valor = 20
+            var valor = '241447996-b00e5ed8-1094-439d-bc36-3610cb04e6c5'
         }
         if(vipQueVeioDaREQ  == 'VIPX60'){
             var title = 'VIP X 60 Dias';
-            var valor = 38
+            var valor = '241447996-6f318a7d-0a28-45c6-9af7-8803145c0b4c'
         }
         if(vipQueVeioDaREQ  == 'VIPX90'){
             var title = 'VIP X 90 Dias';
-            var valor = 55
+            var valor = '241447996-e91cc9df-7712-4913-bb45-b8e7b69c5317'
         }
         if(vipQueVeioDaREQ  == 'VIPY30'){
             var title = 'VIP Y 30 Dias';
-            var valor = 30
+            var valor = '241447996-11ad5f24-69c5-4283-9238-fcb51d4cc7e5'
         }
         if(vipQueVeioDaREQ  == 'VIPY60'){
             var title = 'VIP Y 60 Dias';
-            var valor = 57
+            var valor = '241447996-2d9d705b-4ac9-4258-b7ef-329e6cdef4a2'
         }
         if(vipQueVeioDaREQ  == 'VIPY90'){
             var title = 'VIP X 90 Dias';
-            var valor = 83
+            var valor = '241447996-61b352c8-807f-497a-ac21-cb4f98024e67'
         }
         if(vipQueVeioDaREQ  == 'VIPZ30'){
             var title = 'VIP Z 30 Dias';
-            var valor = 50
+            var valor = '241447996-1196b2d9-c381-45f2-9536-ec51cd2c531a'
         }
         if(vipQueVeioDaREQ  == 'VIPZ60'){
             var title = 'VIP Z 90 Dias';
-            var valor = 95
+            var valor = '241447996-aa4fbf70-8a1d-441b-ba8c-b83353b01d61'
         }
         if(vipQueVeioDaREQ  == 'VIPZ90'){
             var title = 'VIP Z 90 Dias';
-            var valor = 137
+            var valor = '241447996-f5931d49-35a5-450f-9cce-37944d20066e'
         }
-       
+        return res.json(valor)
 
-        let preference = {
+
+/*         let preference = {
                 items: [
                 {
                     title: title,
@@ -80,12 +80,12 @@ app.get('/geraChave/?', (req, res) => {
                     quantity: 1,
                 },
             ]
-        };
-
+        }; */
 
 
         
-        mercadopago.preferences.create(preference)
+        
+        /* mercadopago.preferences.create(preference)
         .then(function(response){
         const {id} = response.body;
 
@@ -96,12 +96,12 @@ app.get('/geraChave/?', (req, res) => {
 
             console.log(error);
 
-        });
+        }); */
 
 
         
         /* Para fazer um teste no navegar do metodo digite http://localhost:3000/teste/id_que_quer_enviar */
-        console.log("Teste de requisação web, seu id é ", vipQueVeioDaREQ)
+        /* console.log("Teste de requisação web, seu id é ", vipQueVeioDaREQ) */
    
     
     });
