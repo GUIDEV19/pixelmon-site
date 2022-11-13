@@ -1,4 +1,4 @@
-
+//teste
 
 let vipx30dias = document.getElementById('vipx30dias')
 let vipx60dias = document.getElementById('vipx60dias')
