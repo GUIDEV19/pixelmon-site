@@ -40,6 +40,8 @@ let b23 = document.querySelector(".b23");
 let b24 = document.querySelector(".b24");
 let b25 = document.querySelector(".b25");
 let b26 = document.querySelector(".b26");
+let b27 = document.querySelector(".b27");
+let b28 = document.querySelector(".b28");
 
 let c1 = document.querySelector(".c1")
 let c2 = document.querySelector(".c2")
@@ -56,7 +58,7 @@ let descricaoProduto = document.getElementById('descricaoProduto')
 
 let textoProdutoSelecionado = document.getElementById('produtoSelecionado')
 
-
+let tituloLadoEsquerdo = document.querySelector(".tituloLadoEsquerdo")
 
 vipx30dias.addEventListener('click', function(){
     //Mudar texto, valor e produto selecionado
@@ -95,14 +97,15 @@ vipx30dias.addEventListener('click', function(){
     b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    tituloLadoEsquerdo.style.marginTop = '0px'
 
     //comandos
     c1.innerHTML = "♣ Sem Warp VIP"
     c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
     c3.innerHTML = "♣ Limite de 4 homes"
-    c4.innerHTML = "♣ Comando /fix"
-    c5.innerHTML = "♣ Comando /fly"
-    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c4.innerHTML = "♣ Comando /feed"
+    c5.innerHTML = "♣ Comando /pc"
+    c6.innerHTML = "♣ Comando /fly"
     c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
@@ -176,14 +179,15 @@ vipx60dias.addEventListener('click', function(){
     b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    tituloLadoEsquerdo.style.marginTop = '0px'
 
     //comandos
     c1.innerHTML = "♣ Sem Warp VIP"
     c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
     c3.innerHTML = "♣ Limite de 4 homes"
-    c4.innerHTML = "♣ Comando /fix"
-    c5.innerHTML = "♣ Comando /fly"
-    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c4.innerHTML = "♣ Comando /feed"
+    c5.innerHTML = "♣ Comando /pc"
+    c6.innerHTML = "♣ Comando /fly"
     c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
@@ -262,12 +266,13 @@ vipx90dias.addEventListener('click', function(){
     c1.innerHTML = "♣ Sem Warp VIP"
     c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
     c3.innerHTML = "♣ Limite de 4 homes"
-    c4.innerHTML = "♣ Comando /fix"
-    c5.innerHTML = "♣ Comando /fly"
-    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c4.innerHTML = "♣ Comando /feed"
+    c5.innerHTML = "♣ Comando /pc"
+    c6.innerHTML = "♣ Comando /fly"
     c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    tituloLadoEsquerdo.style.marginTop = '0px'
 
     valor.innerHTML = 'R$55,00'
 
@@ -337,15 +342,16 @@ vipy30dias.addEventListener('click', function(){
     b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     valor.innerHTML = 'R$30,00'
+    tituloLadoEsquerdo.style.marginTop = '0px'
 
     //comandos
-    c1.innerHTML = "♣ Sem Warp VIP"
+    c1.innerHTML = "♣ Warp VIP"
     c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
-    c3.innerHTML = "♣ Limite de 4 homes"
+    c3.innerHTML = "♣ Limite de 5 homes"
     c4.innerHTML = "♣ Comando /fix"
     c5.innerHTML = "♣ Comando /fly"
-    c6.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
-    c7.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c6.innerHTML = "♣ Comando /pc"
+    c7.innerHTML = "♣ Comando /lend (% de spawn de lendários)"
     c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
@@ -412,8 +418,20 @@ vipy60dias.addEventListener('click', function(){
     b24.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b25.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
     b26.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    tituloLadoEsquerdo.style.marginTop = '0px'
 
     valor.innerHTML = 'R$57,00'
+
+    //comandos
+    c1.innerHTML = "♣ Warp VIP"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 5 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "♣ Comando /pc"
+    c7.innerHTML = "♣ Comando /lend (% de spawn de lendários)"
+    c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
     //Tirar as formatações dos outros (tirar a borda e voltar a cor de fundo ao normal)
     vipx60dias.style.border = 'none'
@@ -473,8 +491,20 @@ vipy90dias.addEventListener('click', function(){
     b19.innerHTML = "♣ 5 Blocos de Diamante"
     b20.innerHTML = "♣ 3 Master ball"
     b21.innerHTML = "♣ Armadura Thunder"
+    tituloLadoEsquerdo.style.marginTop = '0px'
 
     valor.innerHTML = 'R$83,00'
+
+    //comandos
+    c1.innerHTML = "♣ Warp VIP"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 5 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "♣ Comando /pc"
+    c7.innerHTML = "♣ Comando /lend (% de spawn de lendários)"
+    c8.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+    c9.innerHTML = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 
     //Tirar as formatações dos outros (tirar a borda e voltar a cor de fundo ao normal)
     vipx60dias.style.border = 'none'
@@ -539,8 +569,22 @@ vipz30dias.addEventListener('click', function(){
     b24.innerHTML = "♣ 1 Destiny Knot"
     b25.innerHTML = "♣ 1 Everstone"
     b26.innerHTML = "♣ Templo Arceus"
+    b27.style.visibility = 'hidden'
+    b28.style.visibility = 'hidden'
+    tituloLadoEsquerdo.style.marginTop = '-16px'
 
     valor.innerHTML = 'R$50,00'
+
+    //comandos
+    c1.innerHTML = "♣ Warp VIP Z"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 15 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "♣ Comando /pc"
+    c7.innerHTML = "♣ Comando /feed"
+    c8.innerHTML = "♣ Comando /lend (% de spawn de lendários)"
+    c9.innerHTML = "♣ Falar Colorido no /g"
 
     //Tirar as formatações dos outros (tirar a borda e voltar a cor de fundo ao normal)
     vipx60dias.style.border = 'none'
@@ -605,8 +649,22 @@ vipz60dias.addEventListener('click', function(){
     b24.innerHTML = "♣ 1 Destiny Knot"
     b25.innerHTML = "♣ 1 Everstone"
     b26.innerHTML = "♣ Templo Arceus"
+    b27.style.visibility = 'hidden'
+    b28.style.visibility = 'hidden'
+    tituloLadoEsquerdo.style.marginTop = '-16px'
     
     valor.innerHTML = 'R$95,00'
+
+    //comandos
+    c1.innerHTML = "♣ Warp VIP Z"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 15 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "♣ Comando /pc"
+    c7.innerHTML = "♣ Comando /feed"
+    c8.innerHTML = "♣ Comando /lend (% de spawn de lendários)"
+    c9.innerHTML = "♣ Falar Colorido no /g"
 
     //Tirar as formatações dos outros (tirar a borda e voltar a cor de fundo ao normal)
     vipx60dias.style.border = 'none'
@@ -669,8 +727,22 @@ vipz90dias.addEventListener('click', function(){
     b24.innerHTML = "♣ 1 Destiny Knot"
     b25.innerHTML = "♣ 1 Everstone"
     b26.innerHTML = "♣ Templo Arceus"
+    b27.style.visibility = 'hidden'
+    b28.style.visibility = 'hidden'
+    tituloLadoEsquerdo.style.marginTop = '-16px'
 
     valor.innerHTML = 'R$137,00'
+
+    //comandos
+    c1.innerHTML = "♣ Warp VIP Z"
+    c2.innerHTML = "♣ Acesso à KIT diário, semanal e mensal"
+    c3.innerHTML = "♣ Limite de 15 homes"
+    c4.innerHTML = "♣ Comando /fix"
+    c5.innerHTML = "♣ Comando /fly"
+    c6.innerHTML = "♣ Comando /pc"
+    c7.innerHTML = "♣ Comando /feed"
+    c8.innerHTML = "♣ Comando /lend (% de spawn de lendários)"
+    c9.innerHTML = "♣ Falar Colorido no /g"
 
     //Tirar as formatações dos outros (tirar a borda e voltar a cor de fundo ao normal)
     vipx60dias.style.border = 'none'

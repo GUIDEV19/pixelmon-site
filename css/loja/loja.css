@@ -40,7 +40,7 @@
     box-shadow: rgb(0 0 0 / 42%) 1px 4px 16px 4px
 }
 
-.ladoEsquerdo h1 {
+.ladoEsquerdo h1.tituloLadoEsquerdo {
     color: white;
     margin-bottom: 15px;
 }
